@@ -43,6 +43,14 @@
         "new": 10,
         "old": 10
       }
+    },
+    {
+      "name": "made of jelly beans",
+      "age_multiplier": {
+        "default": 2,
+        "new": 4,
+        "old": 0
+      }
     }
   ]
 }
