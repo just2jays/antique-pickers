@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Item from './components/Item/Item';
+import Canvas from './components/Canvas/Canvas';
 
 class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="app-container">
-          <Item></Item>
-        </div>
-      </div>
+      // <div className="App">
+      //   <h1>{this.props.message}</h1>
+      // </div>
+      <Canvas />
     );
   }
 }
 
 App.propTypes = {
-
+  message: PropTypes.string.isRequired,
 }
 
 export default App;
