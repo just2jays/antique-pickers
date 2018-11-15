@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import random from 'lodash/random';
 import sample from 'lodash/sample';
 import config from './item_config.json';
+import css from './Item.module.css';
 
 class item extends Component {
   constructor(props) {
@@ -83,7 +84,7 @@ class item extends Component {
 
   render() {
     return (
-      <div>
+      <div className={css.itemInfo}>
         <p>Name: {this.state.name}</p>
         <p>Year made: {this.state.year}</p>
         <p>Value: {this.state.worth}</p>
